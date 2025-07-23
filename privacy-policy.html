@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy | Alba S.r.l</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 2rem;
+            background-color: #ffffff;
+            color: #3a3a3a;
+        }
+        h1, h2 {
+            color: #d87d4a;
+        }
+        a {
+            color: #007bff;
+        }
+        .lang-switcher {
+            text-align: right;
+            margin-bottom: 1rem;
+        }
+        .lang-switcher a {
+            text-decoration: none;
+            margin-left: 0.5rem;
+            font-weight: bold;
+            color: #3a3a3a;
+        }
+        .lang-switcher a:hover {
+            color: #d87d4a;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="lang-switcher">
+        <span class="lang" data-en="Language:" data-it="Lingua:">Lingua:</span>
+        <a href="#" data-lang="it">IT</a> | <a href="#" data-lang="en">EN</a>
+    </div>
+
+    <h1 class="lang" data-en="Privacy Policy" data-it="Informativa sulla Privacy">Informativa sulla Privacy</h1>
+
+    <p class="lang" data-en="This page describes how Alba S.r.l collects, uses, and protects personal data of users who visit the website www.albaedilizia.it." 
+       data-it="Questa pagina descrive le modalità con cui Alba S.r.l raccoglie, utilizza e protegge i dati personali degli utenti che visitano il sito www.albaedilizia.it.">
+    </p>
+
+    <h2 class="lang" data-en="Automatically Collected Data" data-it="Dati raccolti automaticamente">Dati raccolti automaticamente</h2>
+    <p class="lang" data-en="Like many websites, we automatically collect some data such as:" 
+       data-it="Come molti altri siti web, raccogliamo alcune informazioni automaticamente, come:"></p>
+    <ul>
+        <li class="lang" data-en="Device and browser type" data-it="Tipo di dispositivo e browser utilizzato"></li>
+        <li class="lang" data-en="IP address (anonymized)" data-it="Indirizzo IP (reso anonimo per motivi di privacy)"></li>
+        <li class="lang" data-en="Pages visited and session time" data-it="Pagine visitate e tempo di permanenza"></li>
+        <li class="lang" data-en="Traffic source (e.g. Google, Instagram, etc.)" data-it="Origine del traffico (es. Google, Instagram, ecc.)"></li>
+    </ul>
+
+    <h2 class="lang" data-en="Google Analytics" data-it="Google Analytics">Google Analytics</h2>
+    <p class="lang" data-en="We use Google Analytics to collect anonymous and aggregated statistics to improve the user experience and monitor site performance."
+       data-it="Utilizziamo Google Analytics per raccogliere dati statistici in forma anonima e aggregata, al fine di migliorare l’esperienza utente e monitorare le performance del sito."></p>
+    <p class="lang" data-en="We have enabled IP anonymization and do not use advertising or remarketing features."
+       data-it="Abbiamo attivato l’anonimizzazione dell’indirizzo IP e non utilizziamo alcuna funzione pubblicitaria o di remarketing."></p>
+
+    <h2 class="lang" data-en="Cookies" data-it="Cookie">Cookie</h2>
+    <p class="lang" data-en="We use technical and analytics cookies. No personal data is stored without explicit consent."
+       data-it="Utilizziamo cookie tecnici e analitici. Nessun dato personale viene salvato senza consenso esplicito."></p>
+    <p class="lang" data-en="You can accept or reject optional cookies via the banner shown at first access."
+       data-it="Al primo accesso al sito, puoi scegliere se accettare o rifiutare i cookie analitici tramite il banner in basso."></p>
+
+    <h2 class="lang" data-en="Contact Form" data-it="Modulo di contatto">Modulo di contatto</h2>
+    <p class="lang" data-en="If you use the contact form, your data (name, email, message) will be used only to respond and will not be shared with third parties."
+       data-it="Se scegli di inviarci un messaggio tramite il modulo di contatto, i tuoi dati (nome, email, messaggio) verranno usati solo per rispondere alla tua richiesta. Non condivideremo i tuoi dati con terze parti."></p>
+
+    <h2 class="lang" data-en="Your Rights" data-it="I tuoi diritti">I tuoi diritti</h2>
+    <p class="lang" data-en="In accordance with the GDPR (EU Regulation 2016/679), you have the right to:"
+       data-it="In conformità al GDPR (Regolamento UE 2016/679), puoi:"></p>
+    <ul>
+        <li class="lang" data-en="Request access to your data" data-it="Richiedere l’accesso ai tuoi dati"></li>
+        <li class="lang" data-en="Request rectification or deletion" data-it="Richiedere la rettifica o cancellazione"></li>
+        <li class="lang" data-en="Object to processing" data-it="Opporsi al trattamento"></li>
+    </ul>
+    <p class="lang" data-en="For any request, you can write to:" data-it="Per qualsiasi richiesta, puoi contattarci a:">
+        <a href="mailto:albasrledilizia2000@gmail.com">albasrledilizia2000@gmail.com</a>
+    </p>
+
+    <h2 class="lang" data-en="Data Controller" data-it="Responsabile del trattamento">Responsabile del trattamento</h2>
+    <p><strong>Alba S.r.l</strong><br>
+    Via Gaetano Salvemini 9, 20161 Milano (MI), Italia<br>
+    P.IVA: 13141540966</p>
+
+    <p class="lang" data-en="Last updated: July 2025" data-it="Ultimo aggiornamento: Luglio 2025"></p>
+
+    <!-- Language switcher script (same logic as main website) -->
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.lang').forEach(el => {
+                const translation = el.getAttribute(`data-${lang}`);
+                if (translation) el.textContent = translation;
+            });
+        }
+
+        // Default to Italian, changeable via click
+        let currentLang = 'it';
+        switchLanguage(currentLang);
+
+        document.querySelectorAll('.lang-switcher a').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                currentLang = link.getAttribute('data-lang');
+                switchLanguage(currentLang);
+            });
+        });
+    </script>
+
+</body>
+</html>
